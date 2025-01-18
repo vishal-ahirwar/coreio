@@ -60,7 +60,6 @@ template <typename... Args>
 void Core::print(const Args &...args)
 {
     ((printArg(args), 0), ...);
-    printArg("\n");
 };
 
 template <typename T>
